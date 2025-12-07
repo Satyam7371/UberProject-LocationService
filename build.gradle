@@ -40,7 +40,11 @@ dependencies {
     implementation 'org.example:UberProject-EntityService:0.0.4-SNAPSHOT'
 
     implementation 'org.springframework.boot:spring-boot-starter-data-redis'
+    // required lettuce by spring data redis to communicate with redis server
     implementation 'io.lettuce:lettuce-core'
+
+    // https://mvnrepository.com/artifact/org.springframework.cloud/spring-cloud-starter-netflix-eureka-client
+    implementation("org.springframework.cloud:spring-cloud-starter-netflix-eureka-client:5.0.0")
 
 }
 
